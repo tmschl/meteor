@@ -1,0 +1,10 @@
+<template name="userWindow">
+  <div class="loginWindow">
+    {{loginButtons}}
+  </div>
+  {{#if loggedIn}}
+    {{#unless currentQuestion}}
+      {{> newQuestion}}
+    {{/unless}}
+  {{/if}}
+</template>

@@ -1,0 +1,28 @@
+<template name="questions">   
+  {{#each questions}}
+    <div class="aQuestion">
+      {{> question}}
+    </div>
+  {{/each}}
+</template>
+
+<template name="question">
+  <div>
+    <span class="qTitle">
+      {{qTitle}}
+    </span>
+    <span>
+      <button id="deleteQuestion">Delete</button>
+    </span>
+  </div>
+  <div>
+    <span class="qText">
+      {{qText}}
+    </span>
+  </div>
+  <div class="userAsked">
+    <span class="userName">
+      {{user}}
+    </span>
+  </div>
+</template>

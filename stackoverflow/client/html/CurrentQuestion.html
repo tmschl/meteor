@@ -1,0 +1,23 @@
+<template name="currentQuestion">
+  
+  <div class="currentQuestion">
+    <span>  
+      {{#each question}}
+        <div id="closeCurrentQuestion">Home</div>
+        {{>question}}
+      {{/each}}
+    </span>
+    <div class="answers">
+      {{>answers}}
+    </div>
+    {{#if loggedIn}}
+      <div class="newAnswer">
+        <textarea id="anAnswer"></textarea>
+        <button id="addAnswer">Answer</button>
+      </div>
+    {{/if}}
+    {{#unless loggedIn}}
+      <div class="notLoggedMessage"> Please Login to Answer! </div>
+    {{/unless}}
+  </div>
+</template>

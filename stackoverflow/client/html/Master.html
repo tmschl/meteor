@@ -1,0 +1,15 @@
+<template name="masterControl">
+  {{#unless questionSelected}}
+    <div class="questionPane">
+      {{> questions}}
+    </div> 
+  {{/unless}}
+  {{#if questionSelected}}
+    <div class="currentQuestion">
+      {{>currentQuestion}}
+    </div>
+  {{/if}}
+  <div class="userWindow">
+    {{> userWindow}}
+  </div>
+</template>

@@ -1,0 +1,126 @@
+/* CSS declarations go here */
+body{
+  font-family: helvetica;
+}
+.acceptBox{
+  margin-top: 15px;
+  background-image: url(sprites.png);
+  width:80px;
+  height:50px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  background-position: 0px -560px;
+}
+.hideAcceptBox{
+  margin-top: 15px;
+  background-image: url(sprites.png);
+  width:80px;
+  height:50px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  background-position: 0px 50px;
+}
+
+/* Vote Accepted */
+.vote-accepted-on {
+  background-position: 0px -460px;
+}
+
+textarea{
+  height: 80px;
+}
+.qTitle {
+  font-size: 1.6em;
+  color: #07c;
+  text-align: left;
+}
+
+.qTitle:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-align: left;
+}
+
+.qText {
+  font-size: 1em;
+}
+
+.userWindow{
+  width: 200px;
+  margin-left: auto;
+  margin-right: 10%;
+}
+.questionPane{
+  margin-left: 100px;
+  margin-top: 10px;
+  width: 500px;
+  position: fixed;
+}
+.currentQuestion{
+  margin-left: 100px;
+  margin-top: 10px;
+  width: 500px;
+  position: fixed;
+
+}
+.aQuestion{
+ padding: 10px;
+ width:50%;
+}
+.newQuestion{
+  margin-right: 10px;
+  margin-left: auto;
+  padding-top: 20px;
+  width: 150px;
+  
+}
+.loginWindow{
+  margin-right: 10px;
+  margin-left: auto;
+  width: 150px;
+}
+.newAnswer{
+  margin-top: 20px;
+}
+
+.notLoggedMessage{
+  margin-top: 25px;
+}
+.answer{
+  border-top: 1px solid gray;
+  min-height: 30px;
+}
+.answerText{
+  display: inline-block;
+  margin-top: 25px;
+  position: absolute;
+
+}
+
+.userAsked{
+  float: right;
+}
+.userName{
+  font-size: small;
+  color: gray;
+}
+
+#closeCurrentQuestion{
+  background-color: #07c;
+  width: 100px;
+  height: 25px;
+  border-radius: 5px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 5px;
+}
+
+#closeCurrentQuestion:hover{
+  background-color: #ffffff;
+  color: #07c;
+  cursor: pointer;
+  border: 1px solid gray;
+}

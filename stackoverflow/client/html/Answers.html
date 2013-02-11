@@ -1,0 +1,31 @@
+<template name="answers">
+  <h3>Answers</h3>
+  {{#each answer}}
+    <div class="answer">
+      {{> answer}}
+    </div>
+  {{/each}}
+</template>
+
+<template name="answer">
+    {{#if acceptedAnswer}}
+      <div class="acceptBox vote-accepted-on">
+    {{/if}}
+    {{#unless acceptedAnswer}}
+      {{#unless anAnswerAccepted}}
+        <div class="acceptBox">
+      {{/unless}}
+      {{#if anAnswerAccepted}}
+        <div class="hideAcceptBox">
+      {{/if}}
+    {{/unless}}
+    </div>
+  <div class="answerText">
+    {{answerText}}
+  </div>
+  <div class="userAsked">
+    <span class="userName">
+      {{user}}
+    </span>
+  </div>
+</template>
